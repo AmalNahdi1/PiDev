@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0"   xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui.ReservationController">
+   <children>
+      <ImageView fitHeight="401.0" fitWidth="475.0" layoutX="128.0">
+         <image>
+            <Image url="@Applis-covoiturage-Photo-1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="218.0" layoutY="14.0" prefHeight="30.0" prefWidth="226.0" text="      Reservation" textAlignment="CENTER" textFill="#725b5b">
+         <font>
+            <Font name="Lucida Sans Demibold" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="146.0" layoutY="70.0" text="nombre de places" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label layoutX="156.0" layoutY="108.0" text="id offre" textFill="WHITE" />
+      <Label layoutX="152.0" layoutY="179.0" text="point de depart" textFill="WHITE" />
+      <Label layoutX="153.0" layoutY="145.0" text="id_client" textFill="WHITE" />
+      <Label layoutX="150.0" layoutY="249.0" text="id_conducteur" textFill="WHITE" />
+      <Label layoutX="153.0" layoutY="212.0" text="point_arrive" textFill="WHITE" />
+      <Button fx:id="btnHistorique" layoutX="30.0" layoutY="117.0" mnemonicParsing="false" onAction="#showHistorique" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #7AE1D0; -fx-background-radius: 10;" text="historique" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Demibold" size="10.0" />
+         </font>
+      </Button>
+      <TextField fx:id="tfIdOffre" layoutX="275.0" layoutY="104.0" style="-fx-background-radius: 10;" />
+      <TextField fx:id="tfIdClient" layoutX="275.0" layoutY="141.0" style="-fx-background-radius: 10;" />
+      <TextField fx:id="tfPointDepart" layoutX="275.0" layoutY="175.0" style="-fx-background-radius: 10;" />
+      <TextField fx:id="tfPointArrive" layoutX="275.0" layoutY="208.0" style="-fx-background-radius: 10;" />
+      <TextField fx:id="tfIdConcucteur" layoutX="275.0" layoutY="245.0" style="-fx-background-radius: 10;" />
+      <TextField fx:id="tfNombrePlaces" layoutX="275.0" layoutY="66.0" style="-fx-background-radius: 10;" />
+      <Button fx:id="btnDelete" layoutX="21.0" layoutY="221.0" mnemonicParsing="false" onAction="#delete" prefHeight="25.0" prefWidth="102.0" style="-fx-background-color: #7AE1D0; -fx-background-radius: 10;" text="delete" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Demibold" size="11.0" />
+         </font></Button>
+      <Button fx:id="btnUpdate" layoutX="30.0" layoutY="266.0" mnemonicParsing="false" onAction="#updateReservation" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: #7AE1D0; -fx-background-radius: 10;" text="update" textFill="WHITE">
+         <font>
+            <Font name="Lucida Sans Demibold" size="13.0" />
+         </font></Button>
+      <Label layoutX="25.0" layoutY="192.0" text="id" />
+      <TextField fx:id="tfIdRes" layoutX="40.0" layoutY="188.0" prefHeight="25.0" prefWidth="63.0" style="-fx-background-radius: 10;" />
+      <Button fx:id="btnConfirmerReservation" layoutX="30.0" layoutY="54.0" mnemonicParsing="false" onAction="#confirmer" prefHeight="25.0" prefWidth="83.0" style="-fx-background-color: #7AE1D0; -fx-background-radius: 10;" text="confirmer" textFill="#fcfcfc">
+         <font>
+            <Font name="Lucida Sans Demibold" size="11.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
